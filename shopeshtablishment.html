@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop Establishment – One Stop Digital</title>
+  <style>
+    body { 
+      margin: 0; 
+      font-family: Arial, sans-serif; 
+      background: #f8f9fa; 
+      color: #212529; 
+    }
+
+    header {
+      background: #004d40; 
+      color: white; 
+      padding: 15px 20px;
+      text-align: center; 
+      font-size: 1.5rem; 
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px; 
+      margin: 30px auto; 
+      padding: 20px;
+      background: white; 
+      border-radius: 10px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product-image {
+      max-width: 280px; 
+      width: 100%; 
+      height: auto;
+      border-radius: 8px; 
+      margin-bottom: 20px;
+    }
+
+    h2 { 
+      color: #004d40; 
+      margin-bottom: 10px; 
+    }
+
+    p { 
+      font-size: 1rem; 
+      line-height: 1.5; 
+      margin-bottom: 20px; 
+      text-align: justify;
+    }
+
+    h3 { 
+      margin-bottom: 10px; 
+      color: #004d40; 
+    }
+
+    .btn {
+      padding: 10px 20px; 
+      background: #007bff; 
+      border: none;
+      border-radius: 5px; 
+      color: white; 
+      font-size: 1rem;
+      cursor: pointer; 
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover { 
+      background: #0056b3; 
+    }
+
+    footer {
+      background: #004d40; 
+      color: white; 
+      text-align: center;
+      padding: 10px; 
+      margin-top: 30px; 
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header { font-size: 1.3rem; padding: 14px 16px; }
+      .container { margin: 20px 15px; padding: 18px; }
+      .product-image { max-width: 240px; margin-bottom: 18px; }
+      p { font-size: 0.95rem; }
+      h2 { font-size: 1.25rem; }
+      h3 { font-size: 1.1rem; }
+      .btn { font-size: 0.95rem; padding: 9px 18px; }
+    }
+
+    @media (max-width: 480px) {
+      header { font-size: 1.15rem; padding: 12px 14px; }
+      .container { margin: 15px 12px; padding: 15px; }
+      .product-image { max-width: 200px; margin-bottom: 16px; }
+      p { font-size: 0.9rem; }
+      h2 { font-size: 1.15rem; }
+      h3 { font-size: 1rem; }
+      .btn { font-size: 0.9rem; padding: 8px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>One Stop Digital</header>
+
+<div class="container">
+  <img class="product-image" src="data:image/png;base64,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" alt="Shop Establishment Certificate">
+
+  <h2>Shop Establishment Registration</h2>
+
+  <p>
+    Shop Establishment registration (Shop & Establishment Act) is a legal requirement for businesses, shops, and commercial establishments.
+    It helps you operate legally, maintain employee records, and comply with local labour rules. We assist in preparing and submitting
+    the application so your shop gets registered without hassle.
+  </p>
+
+  <h3>Want To Get your Shop Registered?</h3>
+  <a href="https://wa.me/916005644425?text=Hello%2C%20I%20would%20like%20to%20request%20a%20callback%20regarding%20the%20Shop%20Establishment%20Certificate%20application.%0APlease%20guide%20me%20with%20the%20process%20and%20required%20documents.%0AThank%20you." target="_blank">
+    <button class="btn">Request Callback</button>
+  </a>
+</div>
+
+<footer>&copy; 2025 One Stop Digital | Contact: +91-6005644425</footer>
+
+</body>
+</html>

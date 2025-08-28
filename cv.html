@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV / Character Certificate – One Stop Digital</title>
+  <style>
+    :root{
+      --brand-dark:#004d40;
+      --accent:#007bff;
+      --accent-hover:#0056b3;
+      --bg:#f8f9fa;
+      --text:#212529;
+      --card-bg:#ffffff;
+      --radius:10px;
+      --shadow:0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+      display:flex;
+      flex-direction:column;
+      min-height:100vh;
+    }
+
+    header{
+      background:var(--brand-dark);
+      color:#fff;
+      padding:16px 18px;
+      text-align:center;
+      font-weight:700;
+      font-size:1.5rem;
+    }
+
+    .container{
+      max-width:900px;
+      margin:28px auto;
+      background:var(--card-bg);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .product-image{
+      width:100%;
+      max-width:320px;
+      height:auto;
+      display:block;
+      margin:0 auto 18px;
+      border-radius:8px;
+      object-fit:contain;
+    }
+
+    h2{ color:var(--brand-dark); margin:8px 0 12px; font-size:1.4rem; }
+    p{ margin:0 auto 16px; max-width:760px; font-size:1rem; text-align:justify; }
+
+    .cta{
+      margin-top:18px;
+    }
+
+    .btn{
+      background:var(--accent);
+      color:#fff;
+      border:none;
+      padding:11px 20px;
+      border-radius:8px;
+      font-size:1rem;
+      cursor:pointer;
+      transition:background .18s ease, transform .08s ease;
+    }
+    .btn:hover{ background:var(--accent-hover); }
+    .btn:active{ transform:translateY(1px); }
+
+    footer{
+      margin-top:auto;
+      background:var(--brand-dark);
+      color:#fff;
+      text-align:center;
+      padding:12px 10px;
+      font-size:0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width:768px){
+      header{ font-size:1.3rem; padding:14px 16px; }
+      .container{ margin:20px 15px; padding:18px; }
+      .product-image{ max-width:240px; margin-bottom:16px; }
+      p{ font-size:0.95rem; }
+      h2{ font-size:1.25rem; }
+      .btn{ font-size:0.95rem; padding:9px 18px; }
+    }
+
+    @media (max-width:480px){
+      header{ font-size:1.15rem; padding:12px 14px; }
+      .container{ margin:15px 12px; padding:15px; }
+      .product-image{ max-width:200px; margin-bottom:14px; }
+      p{ font-size:0.9rem; }
+      h2{ font-size:1.15rem; }
+      .btn{ font-size:0.9rem; padding:8px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>One Stop Digital</header>
+
+<div class="container">
+  <img class="product-image" src="data:image/jpeg;base64,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" alt="CV / Certificate">
+  <h2>CV / Character Certificate</h2>
+  <p>
+    A CV (Curriculum Vitae) or Character Certificate is an important document that represents your qualifications,
+    skills, and personal background. It is often required for job applications, higher education admissions,
+    and other official purposes. We help you prepare and design a professional and accurate document that
+    meets your specific requirements.
+  </p>
+
+  <div class="cta">
+    <h3>Want To Get your CV / Certificate?</h3>
+    <a href="https://wa.me/916005644425?text=Hello%2C%20I%20would%20like%20to%20request%20a%20callback%20regarding%20CV%2FResume%20preparation.%0APlease%20share%20the%20details%20about%20the%20process%20and%20requirements.%0AThank%20you." target="_blank">
+      <button class="btn">Request Callback</button>
+    </a>
+  </div>
+</div>
+
+<footer>&copy; 2025 One Stop Digital | Contact: +91-6005644425</footer>
+
+</body>
+</html>

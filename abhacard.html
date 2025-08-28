@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABHA Card – One Stop Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product-image {
+      width: 100%;
+      max-width: 500px;
+      max-height: 250px;
+      object-fit: contain;
+      display: block;
+      margin: auto;
+      border-radius: 6px;
+    }
+    h2 {
+      margin-top: 20px;
+      color: #2c3e50;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 25px;
+    }
+    .cta h3 {
+      margin-bottom: 15px;
+      color: #e67e22;
+    }
+    .cta button {
+      background: #e67e22;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .cta button:hover {
+      background: #d35400;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      .product-image {
+        max-height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>One Stop Digital</h1>
+</header>
+
+<div class="container">
+  <img src="data:image/jpeg;base64,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" alt="ABHA Card" class="product-image">
+
+  <h2>About ABHA Card</h2>
+  <p>
+    The ABHA (Ayushman Bharat Health Account) card is a unique health ID that stores all your medical records on a digital platform. With the help of this card, you can easily share your health-related information with doctors, hospitals, and healthcare providers.
+
+  </p>
+
+  <h2>Benefits of ABHA Card</h2>
+  <ul>
+    <li>Free and lifetime valid digital health ID.</li>
+    <li>Secure storage of all your medical history.</li>
+    <li>Easy access to health records anywhere in India.</li>
+    <li>Supports Ayushman Bharat scheme benefits.</li>
+    <li>Fully linked with your Aadhaar details.</li>
+  </ul>
+
+  <div class="cta">
+    <h3>Want to Get your ABHA Card?</h3>
+    <a href="https://wa.me/916005644425?text=Hello%2C%20I%20would%20like%20to%20request%20a%20callback%20regarding%20the%20ABHA%20Card%20registration.%0APlease%20contact%20me%20at%20your%20earliest%20convenience.%0AThank%20you." target="_blank">
+      <button>Request Callback</button>
+    </a>    
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 One Stop Digital | Contact: +91-6005644425
+</footer>
+
+</body>
+</html>
