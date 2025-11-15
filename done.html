@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed - One Stop Digital</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .done-container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+    .tick {
+      font-size: 70px;
+      color: #27ae60;
+      margin-bottom: 20px;
+      animation: pop 0.4s ease;
+    }
+    @keyframes pop {
+      0% { transform: scale(0); }
+      100% { transform: scale(1); }
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* New Button */
+    .continue-btn {
+      width: 100%;
+      background: #2980b9;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .continue-btn:hover {
+      background: #1f6693;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .done-container {
+        padding: 30px 25px;
+        max-width: 90%;
+      }
+      .tick {
+        font-size: 60px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .done-container {
+        padding: 25px 20px;
+        max-width: 95%;
+      }
+      .tick {
+        font-size: 55px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 13px;
+      }
+      footer {
+        font-size: 12px;
+      }
+      .continue-btn {
+        font-size: 15px;
+        padding: 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="done-container">
+    <div class="tick">✔️</div>
+    <h2>Your Request is Confirmed!</h2>
+    <p>Thank you for choosing <strong>One Stop Digital</strong>.<br>
+    Your booking details and tracking ID will be sent to your WhatsApp shortly.
+    Please note that even if you have chosen COD, you still need to pay a small amount in advance.</p>
+
+    <!-- 🔵 New Button -->
+    <button class="continue-btn" onclick="window.location.href='index.html'">
+      Continue Making Government ID Documents
+    </button>
+
+    <footer>&copy; 2025 One Stop Digital</footer>
+  </div>
+</body>
+</html>

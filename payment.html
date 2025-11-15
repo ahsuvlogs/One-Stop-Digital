@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - One Stop Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .payment-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 450px;
+      text-align: center;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .safe {
+      background: #eaf9ea;
+      border-left: 4px solid #27ae60;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-cash {
+      background: #2980b9;
+    }
+    .btn-cash:hover {
+      background: #1c5e85;
+    }
+    .btn-online {
+      background: #e67e22;
+    }
+    .btn-online:hover {
+      background: #d35400;
+    }
+
+    @media (max-width: 768px) {
+      .payment-box {
+        padding: 25px;
+        width: 90%;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+      button {
+        font-size: 15px;
+        padding: 11px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .payment-box {
+        padding: 20px 18px;
+        border-radius: 8px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 13px;
+      }
+      .safe {
+        font-size: 13px;
+      }
+      button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-box">
+    <h2>Payment Options</h2>
+    <div class="safe">
+      <strong>🔒 Your information is 100% safe with us.</strong><br>
+      We maintain full confidentiality and protect your personal data.
+    </div>
+
+    <p>Our team from <strong>One Stop Digital</strong> will call you soon to confirm your request.<br>
+    Once your card, certificate, or travel booking is completed, your item will be delivered safely to you.</p>
+
+    <h3 style="margin-top:20px; color:#2c3e50;">Please choose a payment option:</h3>
+
+    <!-- Updated Buttons -->
+    <button class="btn-cash" onclick="redirectCash()">Cash / Pay After Work Done</button>
+    <button class="btn-online" onclick="redirectOnline()">Pay Online</button>
+  </div>
+
+  <script>
+    function redirectCash() {
+      window.location.href = 'done.html';
+    }
+    function redirectOnline() {
+      window.location.href = 'online.html';
+    }
+  </script>
+</body>
+</html>

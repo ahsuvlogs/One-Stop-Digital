@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enter Details</title>
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #8e9eab);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    background: #fff;
+    width: 90%;
+    max-width: 420px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+
+  label {
+    font-size: 15px;
+    color: #444;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    margin-left: 5px;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: #5a67d8;
+    box-shadow: 0 0 5px rgba(90, 103, 216, 0.3);
+  }
+
+  button {
+    width: 100%;
+    background: #5a67d8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: #434190;
+  }
+
+  .note {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Enter Your Details</h2>
+  <form id="userForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter your full name" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="Enter your number" required>
+
+    <label for="service">Select Service</label>
+    <select id="service" required>
+      <option value="">-- Select --</option>
+      <option>Pan Card</option>
+      <option>ABHA Card</option>
+      <option>E Shram Card</option>
+      <option>Labour Card</option>
+      <option>Driving Licence</option>
+      <option>Voter ID Card</option>
+      <option>Ration Card</option>
+      <option>Ayushman Card</option>
+      <option>Adhaar Card (dublicate)</option>
+      <option>Masked Adhaar Card</option>
+      <option>Govt. Employee ID Card</option>
+      <option>MGNREGA Card</option>
+      <option>Domicile certificate</option>
+      <option>Income Certificate</option>
+      <option>Food Licence</option>
+      <option>Udhyam Certificate</option>
+      <option>Birth Certificate</option>
+      <option>GST Certificate</option>
+      <option>Shop Establishment Certificate</option>
+      <option>CV / Resume</option>
+      <option>Migration Certificate</option>
+      <option>Experience Certificate</option>
+      <option>Marriage Certificate</option>
+      <option>Caste Certificate</option>
+      <option>Air Ticket</option>
+      <option>Train Ticket</option>
+      <option>Hotel Booking</option>
+      <option>Travel Package</option>
+    </select>
+
+    <label for="House">House no./ Building Name</label>
+    <input type="text" id="house" placeholder="House no./ Building Name" required>
+
+    <label for="area">Road Name / Area / Colony</label>
+    <input type="text" id="area" placeholder="Road Name / Area / Colony" required>
+
+    <label for="pincode">Pincode</label>
+    <input type="text" id="pincode" placeholder="Pincode" required>
+
+    <label for="city">City</label>
+    <input type="text" id="city" placeholder="City" required>
+
+    <label for="state">Select State</label>
+    <select id="state" required>
+      <option value="">-- Select --</option>
+      <option>Andaman And Nicobar Islands</option>
+      <option>Andra Pradesh</option>
+      <option>Arunachal Pradesh</option>
+      <option>Assam</option>
+      <option>Bihar</option>
+      <option>Chandigarh</option>
+      <option>Chhattisgarh</option>
+      <option>Dadra And Nagar Haveli And Daman And Diu</option>
+      <option>Delhi</option>
+      <option>Goa</option>
+      <option>Gujarat</option>
+      <option>Haryana</option>
+      <option>Himachal Pradesh</option>
+      <option>Jammu & Kashmir</option>
+      <option>Jharkhand</option>
+      <option>Karnataka</option>
+      <option>Kerela</option>
+      <option>Ladakh</option>
+      <option>Lakshadweep</option>
+      <option>Madhya Pradesh</option>
+      <option>Maharastra</option>
+      <option>Manipur</option>
+      <option>Meghalaya</option>
+      <option>Mizoram</option>
+      <option>Nagaland</option>
+      <option>Odisha</option>
+      <option>Puducherry</option>
+      <option>Punjab</option>
+      <option>Rajasthan</option>
+      <option>Sikkim</option>
+      <option>Tamil Nadu</option>
+      <option>Telangana</option>
+      <option>Tripura</option>
+      <option>Uttarakhand</option>
+      <option>Uttar Pradesh</option>
+      <option>West Bengal</option>
+    </select>
+    
+    <label>Notes (Optional)</label>
+    <textarea id="notes" placeholder="Write notes if any..." rows="3"></textarea>
+
+    <button type="submit">Proceed</button>
+  </form>
+  <p class="note">Your details are kept 100% private & secure</p>
+</div>
+
+<!-- EmailJS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("QOg8ZCA59T9u2ZJPy");
+
+  // URL se service name fetch karna
+  const urlParams = new URLSearchParams(window.location.search);
+  const selectedService = urlParams.get('service');
+
+  if (selectedService) {
+    const select = document.getElementById('service');
+    for (let i = 0; i < select.options.length; i++) {
+      if (select.options[i].text.toLowerCase() === selectedService.toLowerCase()) {
+        select.selectedIndex = i;
+        break;
+      }
+    }
+  }
+
+  // EMAILJS + Redirect
+  document.getElementById('userForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    emailjs.send("service_onestopdigital", "template_fgv1wog", {
+      name: document.getElementById("name").value,
+      phone: document.getElementById("phone").value,
+      service: document.getElementById("service").value,
+      house: document.getElementById("house").value,
+      area: document.getElementById("area").value,
+      pincode: document.getElementById("pincode").value,
+      city: document.getElementById("city").value,
+      state: document.getElementById("state").value
+    }).then(() => {
+      window.location.href = "payment.html";
+    });
+
+  });
+</script>
+
+</body>
+</html>
