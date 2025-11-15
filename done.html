@@ -23,16 +23,18 @@
       width: 90%;
       max-width: 400px;
     }
-    .tick {
-      font-size: 70px;
-      color: #27ae60;
+
+    .tick-img {
+      width: 80px;
       margin-bottom: 20px;
       animation: pop 0.4s ease;
     }
+
     @keyframes pop {
       0% { transform: scale(0); }
       100% { transform: scale(1); }
     }
+
     h2 {
       color: #2c3e50;
       margin-bottom: 10px;
@@ -43,7 +45,6 @@
       line-height: 1.6;
     }
 
-    /* New Button */
     .continue-btn {
       width: 100%;
       background: #2980b9;
@@ -72,8 +73,8 @@
         padding: 30px 25px;
         max-width: 90%;
       }
-      .tick {
-        font-size: 60px;
+      .tick-img {
+        width: 70px;
       }
       h2 {
         font-size: 20px;
@@ -88,8 +89,8 @@
         padding: 25px 20px;
         max-width: 95%;
       }
-      .tick {
-        font-size: 55px;
+      .tick-img {
+        width: 60px;
       }
       h2 {
         font-size: 18px;
@@ -109,13 +110,15 @@
 </head>
 <body>
   <div class="done-container">
-    <div class="tick">✔️</div>
+
+    <!-- Professional Online Tick -->
+    <img class="tick-img" src="https://img.icons8.com/fluency/96/ok.png" alt="Success">
+
     <h2>Your Request is Confirmed!</h2>
     <p>Thank you for choosing <strong>One Stop Digital</strong>.<br>
     Your booking details and tracking ID will be sent to your WhatsApp shortly.
     Please note that even if you have chosen COD, you still need to pay a small amount in advance.</p>
 
-    <!-- 🔵 New Button -->
     <button class="continue-btn" onclick="window.location.href='index.html'">
       Continue Making Government ID Documents
     </button>
